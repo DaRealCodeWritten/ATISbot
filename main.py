@@ -38,4 +38,7 @@ async def atisreload(ctx):
 
 
 bot.load_extension("cogs.atis")
-bot.run("")
+fptoken = open("bot.token")
+token = fptoken.read()
+fptoken.close()
+bot.run(token)
